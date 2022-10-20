@@ -1,0 +1,19 @@
+* {
+	box-sizing: border-box;
+}
+
+.page {
+	padding: 100px 0;
+}
+
+.hero {
+	width: 1280px;
+	background: #E8EAE9;
+	border-radius: 8px;
+	padding: 60px 100px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	line-height: 36px;
+	color: #5A7184;
+	margin: 0 auto;
+}
