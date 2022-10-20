@@ -11,3 +11,42 @@ body {
 .page {
 	padding: 100px 0;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+	color: #183B56;
+	/* font-family: 'HK Grotesk', sans-serif; */
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+.btn {
+	font-weight: bold;
+	color: #fff;
+	font-size: 18px;
+	line-height: 1;
+	border: none;
+	background: #183B56;
+	height: 56px;
+	padding: 0 32px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.tag {
+	color: #36B37E;
+	background: #D6E5DE;
+	border-radius: 32px;
+	padding: 6px 16px;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
