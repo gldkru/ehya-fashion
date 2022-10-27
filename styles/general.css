@@ -66,9 +66,18 @@ p {
 	background: var(--blue);
 }
 
+.btn_primary:hover {
+	border-color: var(--black);
+	background: var(--black);
+}
+
 .btn_primary.btn_outline {
 	color: var(--blue);
 	background: transparent;
+}
+
+.btn_primary.btn_outline:hover {
+	color: var(--black);
 }
 
 .btn_black {

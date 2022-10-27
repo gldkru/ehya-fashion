@@ -1,4 +1,7 @@
 .header-main {
+	--margin: 40px;
+	--user-padding: 10px;
+
 	display: flex;
 	height: 100px;
 	align-items: center;
@@ -15,20 +18,29 @@
 	margin: auto 0;
 }
 
+.nav-menu-main + * {
+	margin-left: calc(var(--margin) - var(--user-padding));
+}
+
 .nav-menu-main__link {
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 22px;
 	color: var(--black);
 	text-decoration: none;
+	padding: var(--user-padding);
+}
+
+.nav-menu-main__link:hover {
+	color: var(--blue);
 }
 
 .nav-menu-main__link:not(:last-child) {
-	margin-right: 40px;
+	margin-right: calc(var(--gutter) - var(--user-padding) * 2);
 }
 
 .logo-main {
 	display: flex;
 	align-items: center;
-	/* height: 100%; */
+	height: 100%;
 }
