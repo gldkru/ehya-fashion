@@ -1,15 +1,27 @@
+:root {
+	--font: 'Open Sans', sans-serif;
+	--font-secondary: 'HK Grotesk', sans-serif;
+	--text-color: #5A7184;
+	--black: #183B56;
+	--blue: #1565D8;
+}
+
 * {
 	box-sizing: border-box;
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
-	color: #5A7184;
+	font-family: var(--font);
+	color: var(--text-color);
 	font-size: 16px;
 }
 
+a {
+	color: var(--blue);
+	text-decoration: none;
+}
+
 .page {
-	padding: 100px 0;
 }
 
 h1,
@@ -19,8 +31,8 @@ h4,
 h5,
 h6 {
 	font-weight: bold;
-	color: #183B56;
-	/* font-family: 'HK Grotesk', sans-serif; */
+	color: var(--black);
+	font-family: var(--font-secondary);
 	margin: 0;
 }
 
@@ -29,16 +41,43 @@ p {
 }
 
 .btn {
+	display: inline-flex;
+	align-items: center;
 	font-weight: bold;
 	color: #fff;
 	font-size: 18px;
 	line-height: 1;
 	border: none;
-	background: #183B56;
-	height: 56px;
-	padding: 0 32px;
+	height: 48px;
 	border-radius: 8px;
 	cursor: pointer;
+	text-decoration: none;
+	padding: 0 23px;
+	border: 2px solid transparent;
+}
+
+.btn_outline {
+	/* color: ???; */
+	background: transparent;
+}
+
+.btn_primary {
+	border-color: var(--blue);
+	background: var(--blue);
+}
+
+.btn_primary.btn_outline {
+	color: var(--blue);
+	background: transparent;
+}
+
+.btn_black {
+	background: var(--black);
+}
+
+.btn_large {
+	height: 56px;
+	padding: 0 32px;
 }
 
 .tag {

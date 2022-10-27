@@ -1,0 +1,34 @@
+.header-main {
+	display: flex;
+	height: 100px;
+	align-items: center;
+	margin-bottom: 36px;
+}
+
+.header-main__menu {
+	display: flex;
+	justify-content: flex-end;
+	/* align-items: center; */
+}
+
+.nav-menu-main {
+	margin: auto 0;
+}
+
+.nav-menu-main__link {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	color: var(--black);
+	text-decoration: none;
+}
+
+.nav-menu-main__link:not(:last-child) {
+	margin-right: 40px;
+}
+
+.logo-main {
+	display: flex;
+	align-items: center;
+	/* height: 100%; */
+}

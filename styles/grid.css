@@ -12,6 +12,16 @@
 	flex-wrap: wrap;
 }
 
+/* @media screen and (max-width: 768px) {
+	.container {
+		width: 600px;
+	}
+
+	.row {
+		--gutter: 20px;
+	}
+} */
+
 /* Columns */
 .row > * {
 	width: 100%;
@@ -19,10 +29,6 @@
 	flex-shrink: 0;
 	padding-left: calc(var(--gutter) / 2);
 	padding-right: calc(var(--gutter) / 2);
-
-	/* For tests */
-	/* min-height: 300px; */
-	/* background: #33333310; */
 }
 
 /* 12 columns */
