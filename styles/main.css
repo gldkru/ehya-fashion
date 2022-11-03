@@ -1,9 +1,15 @@
 @import 'general.css';
 
+/* Sticky footer */
+@import 'page.css';
+
+/* Columns */
 @import 'grid.css';
 
+/* Blocks */
 @import 'header.css';
 @import 'footer.css';
 @import 'content.css';
 
 @import 'hero.css';
+@import 'cta-form.css';
