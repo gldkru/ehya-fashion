@@ -3,9 +3,22 @@
 	--user-padding: 10px;
 
 	display: flex;
-	height: 100px;
+	height: 64px;
 	align-items: center;
-	margin-bottom: 36px;
+	margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .header-main {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .header-main {
+        height: 100px;
+        margin-bottom: 36px;
+    }
 }
 
 .header-main__menu {
