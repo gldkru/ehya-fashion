@@ -71,7 +71,8 @@
 
                 <form action="#">
                     <div class="custom-checkbox">
-                        <input type="checkbox" id="agreement" class="custom-checkbox__input" />
+                        <input type="checkbox" id="agreement" class="custom-checkbox__input" name="agreement"
+                            value="true" />
                         <label for="agreement" class="custom-checkbox__label">
                             <span>I agree <a href="#">Lorem ipsum</a> dolor
                                 sit amet
@@ -83,6 +84,37 @@
                             </span>
                         </label>
                     </div>
+
+                    <div class="custom-checkbox">
+                        <input type="checkbox" id="secondary" class="custom-checkbox__input" name="agreement"
+                            value="false" />
+                        <label for="secondary" class="custom-checkbox__label">
+                            Secondary value
+                        </label>
+                    </div>
+
+                    <div class="custom-checkbox">
+                        <input type="radio" id="payment1" class="custom-checkbox__input" name="payment" value="card">
+                        <label for="payment1" class="custom-checkbox__label">
+                            Credit card
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <input type="radio" id="payment2" class="custom-checkbox__input" name="payment" value="paypal">
+                        <label for="payment2" class="custom-checkbox__label">
+                            Paypal
+                        </label>
+                    </div>
+                    <div class="custom-checkbox">
+                        <input type="radio" id="payment3" class="custom-checkbox__input" name="payment" value="bonus">
+                        <label for="payment3" class="custom-checkbox__label">
+                            Bonus
+                        </label>
+                    </div>
+
+                    <br /><br />
+
+                    <button type="submit" class="btn btn_primary">Submit</button>
                 </form>
             </div>
 

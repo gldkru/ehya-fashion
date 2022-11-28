@@ -1,8 +1,5 @@
 .custom-checkbox {
-    width: 200px;
-
-    position: relative;
-    padding-left: 1.5rem;
+    display: flex;
 }
 
 .custom-checkbox__input {
@@ -10,6 +7,8 @@
 }
 
 .custom-checkbox__label {
+    line-height: 1.4;
+    display: flex;
     cursor: pointer;
 }
 
@@ -23,19 +22,22 @@
     background: #fff;
     margin-right: 0.5rem;
     flex-shrink: 0;
-    line-height: 1.4;
-
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    top: 3px;
 }
 
 .custom-checkbox__input:checked + .custom-checkbox__label::before {
     background-color: var(--blue);
-    background-image: url("data:image/svg+xml,%3Csvg width='9' height='7' viewBox='0 0 9 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.03516 6.40234C4.28125 6.64844 4.69141 6.64844 4.9375 6.40234L8.65625 2.68359C8.92969 2.41016 8.92969 2 8.65625 1.75391L8.05469 1.125C7.78125 0.878906 7.37109 0.878906 7.125 1.125L4.47266 3.77734L1.84766 1.125C1.60156 0.878906 1.19141 0.878906 0.917969 1.125L0.316406 1.75391C0.0429688 2 0.0429688 2.41016 0.316406 2.68359L4.03516 6.40234Z' fill='%23fff'/%3E%3C/svg%3E%0A");
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='7' viewBox='0 0 8 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7 0.800049C6.724 0.800049 6.474 0.912049 6.293 1.09305L5.293 2.09305L3 4.38605L1.707 3.09305C1.526 2.91205 1.276 2.80005 1 2.80005C0.448 2.80005 0 3.24805 0 3.80005C0 4.07605 0.112 4.32605 0.293 4.50705L2.293 6.50705C2.474 6.68805 2.724 6.80005 3 6.80005C3.276 6.80005 3.526 6.68805 3.707 6.50705L6.707 3.50705L7.707 2.50705C7.888 2.32605 8 2.07605 8 1.80005C8 1.24755 7.552 0.800049 7 0.800049' fill='white'/%3E%3C/svg%3E%0A");
     background-repeat: no-repeat;
     background-position: center;
     border-color: var(--blue);
 }
 
-/* .custom-checkbox__label::after {} */
+.custom-checkbox__input[type="radio"] + .custom-checkbox__label::before {
+    border-radius: .5rem;
+}
+
+.custom-checkbox__input[type="radio"]:checked + .custom-checkbox__label::before {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e")
+}
