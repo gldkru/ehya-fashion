@@ -1,21 +1,18 @@
 @import 'general.css';
 
-@import 'checkbox.css';
-
-/* Sticky footer */
-@import 'page.css';
-@import 'order.css';
-@import 'display.css';
-
-/* Columns */
-@import 'grid.css';
+/* Tools */
+@import './tools/checkbox.css';
+@import './tools/page.css';
+@import './tools/order.css';
+@import './tools/display.css';
+@import './tools/grid.css';
 
 /* Blocks */
-@import 'header.css';
-@import 'footer.css';
-@import 'content.css';
+@import './blocks/header.css';
+@import './blocks/footer.css';
+@import './blocks/content.css';
 
-@import 'hero.css';
-@import 'cta-form.css';
+@import './blocks/hero.css';
+@import './blocks/cta-form.css';
 
-@import 'product.css';
+@import './blocks/product.css';
