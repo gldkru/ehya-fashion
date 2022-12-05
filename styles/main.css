@@ -5,6 +5,7 @@
 /* Sticky footer */
 @import 'page.css';
 @import 'order.css';
+@import 'display.css';
 
 /* Columns */
 @import 'grid.css';

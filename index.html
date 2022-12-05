@@ -40,8 +40,8 @@
                         </div>
                     </div>
                     <div class="col-6 col-lg-10">
-                        <div class="header-main__menu">
-                            <button class="btn btn_icon btn_transparent hidden-lg">
+                        <div class="header-main__menu d-flex d-lg-none">
+                            <button class="btn btn_icon btn_transparent">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -49,15 +49,16 @@
                                         fill="#3A4C66" />
                                 </svg>
                             </button>
-                            <nav class="nav-menu-main hidden-xs-only hidden-sm-only hidden-md-only">
+                        </div>
+                        <div class="header-main__menu d-none d-lg-flex">
+                            <nav class="nav-menu-main">
                                 <a href="#" class="nav-menu-main__link">Home</a>
                                 <a href="#" class="nav-menu-main__link">Landings</a>
                                 <a href="#" class="nav-menu-main__link">Pages</a>
                                 <a href="#" class="nav-menu-main__link">Docs</a>
                                 <a href="#" class="nav-menu-main__link">Help</a>
                             </nav>
-                            <a href="#"
-                                class="btn btn_outline btn_primary hidden-xs-only hidden-sm-only hidden-md-only">
+                            <a href="#" class="btn btn_outline btn_primary">
                                 Get it now
                             </a>
                         </div>
